@@ -18,7 +18,7 @@ def start(message):
         bot.send_message(message.chat.id, mess, parse_mode='html', reply_markup=markup)
         print(f'{message.from_user.first_name} {message.from_user.last_name}')
     elif message.text == '/help':
-        bot.send_message(message.chat.id, 'Пошел нахуй')
+        bot.send_message(message.chat.id, ':-(')
 
 
 @bot.message_handler(content_types='text')
